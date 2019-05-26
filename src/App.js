@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
+import SidebarComponent from './SidebarComponent'
+import MainComponent from './MainComponent'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render(){
+    let urlList = [
+      {tag:"Home",'url':'#', color:'red'},
+      {tag:'About Us', url:'#', color:'white'},
+      {tag:'Supporters',url:'#', color:'blue'},
+      { tag:"Host",url:'#', color:'yellow'},
+      {tag:"bhoomi",url:'#', color:'white'}
+  ]
+    return(
+      <div className = "App" >
+       <SidebarComponent navList={urlList}/>
+       <MainComponent/>
+      </div>
+    );
+  }
 }
 
 export default App;

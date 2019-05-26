@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -30,4 +30,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+.sidebar {
+  float: left;
+  width:18%;
+  height:650px;
+  font-size:18px;
+  font-weight: 400;
+  background: black;
+  position:fixed;
+}
+
+.main {
+  float: right;
+  width:80%;
+  height:100%;
+  background:white;
+}
+ul>li{
+  text-align: left;
+  margin:10px;
+  margin-right: 20px;
+}
+ul {
+  list-style: none;
+}
+
+ul> li> div a{
+      outline: 0;
+
 }
