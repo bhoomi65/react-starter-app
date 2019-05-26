@@ -14,7 +14,6 @@ class MainComponent extends Component {
 
 		componentDidMount(){
 			let data = getData('https://jsonplaceholder.typicode.com/posts');
-
 			data.then((post) =>{
 				this.setState({
 					loading: false,

@@ -7,7 +7,7 @@ export default class PostComponent extends Component {
 		let post = this.props.post;
 		if (post && post.length) {
 			post.map((value, index) => {
-				return postContainer.push(<PostList title={value.title} key={index} img={'https://picsum.photos/200/200?grayscale'} body={value.body} />);
+				return postContainer.push(<PostList title={value.title} key={index} img={'https://picsum.photos/100/100?grayscale'} body={value.body} />);
 			});
 		}
 		return (<div className="PostComponent">

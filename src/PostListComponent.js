@@ -6,7 +6,7 @@ export class PostListComponent extends Component{
 			return(
 			<div className="card">
 					<div className="card-body media">
-					<div className="media-left">
+					<div className="media-left" >
 						<img src={this.props.img}/>
 					</div>
 					<div className="media-body">
