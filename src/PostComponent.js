@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import PostList  from './PostListComponent';
 export default class PostComponent extends Component {
 	render() {
-		console.log(this.props.post);
 		let postContainer = [];
 		let post = this.props.post;
+	
 		if (post && post.length) {
 			post.map((value, index) => {
-				return postContainer.push(<PostList title={value.title} key={index} img={'https://picsum.photos/100/100?grayscale'} body={value.body} />);
+				 const postImageUrl = `https://picsum.photos/id/${value.id}/100/100`;
+				return postContainer.push(<PostList title={value.title} key={index} img={postImageUrl} body={value.body} />);
 			});
 		}
 		return (<div className="PostComponent">
@@ -16,3 +17,5 @@ export default class PostComponent extends Component {
 		</div>);
 	}
 }
+
+      

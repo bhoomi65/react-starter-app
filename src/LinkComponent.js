@@ -22,7 +22,7 @@ export class LinkComponent extends Component {
 
 	render() {
 		let lcolor = this.props.color;
-		let isvisited = this.state.visited ? 'white' :'blue'
+		let isvisited = this.state.visited ? 'blue' :'white'
 		const linkStyle= {
 			color: isvisited
 		}
